@@ -1,0 +1,260 @@
+
+@media(max-width:1024px) {
+    
+    body {
+      width: 100%; 
+      
+    }
+    h2 {
+        text-align: center;
+        font-size:2.0rem ;
+    }
+    .infos h3 {
+        font-size: 23px;
+        
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    header,
+    .corporate-info,
+    .news-container,
+    .adoption,
+    .contact,
+    .foot-container{
+        width: 100%;
+    }
+
+    /* ------------------
+       ヘッダー＆メイン画像
+    -------------------- */
+
+    
+    #sora-img {
+        width: 100%;    
+    }
+    header {
+        margin-bottom: 100px;
+    }
+   
+    .head-list {
+        display: none;
+    }
+   
+    /* .respon-menu {
+        display: block;
+    } */
+    .main-text {
+        font-size:40px;
+        padding: 15%;
+    }
+
+    .corporate-info {
+      flex-wrap: wrap;
+      margin:0 0 100px 0;
+    }
+    
+    .infos {
+      /* margin:20px 100px; */
+      margin: 0 auto;
+    }
+    #overview {
+        /* margin-right: 0; */
+        margin-bottom: 50px;
+    }
+    .top {
+        width: 80px;
+        height: 80px;
+       
+    }
+    /*====================
+     代表挨拶 
+    =====================*/
+ 
+    .greeting {
+        flex-wrap: wrap;
+    }
+    .greeting-text {
+        width: 95%;
+        order: 2;
+        font-size: 17px;
+        text-align: center;
+    }
+    .representative-img {
+        order: 1;
+        margin-bottom: 80px;
+    }
+    .decoration1 {
+        background-color: rgba(23, 53, 184, 0.3);
+        margin: 0 auto;
+    }
+    .decoration2,
+    .decoration1{
+        display: none;
+    }
+    /* --------------
+            ニュース
+    -----------------*/
+    
+
+    .news h2 {
+        padding: 20px 0 0 0;    
+    }
+
+    .news-container{
+        font-size: 13px; 
+        text-align: center;
+        padding: 0 0 30px 0;
+    }
+    .news-container span {
+        display: block;
+        padding: 10px;
+    }
+    /* --------------
+        採用情報 
+    -----------------*/
+
+    .adoption  {
+        flex-wrap: wrap;
+    }
+
+    .adoption-right {
+        margin: 0 auto 50px auto;
+
+    }
+
+    .adoption-img {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+   /*-============
+        フッター
+    ============ */
+
+    .fot-nav {
+       display: none;
+    }
+    .foot-left {
+        font-size: 12px;
+        margin-top: 80px;
+    }
+    /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+　　 アコーディオン メニュー
+    ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+    /* バーカー */
+    .burger {
+        width: 60px;
+        height: 60px;
+        background-image: url('./img/burger.png');
+        background-size: 49px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 10px 20px 0 80px;
+        cursor: pointer;
+        /* バーガーを押下した後もバーガーを隠さない */
+        position: relative;
+        z-index: 2;
+    }
+    .burger:hover {
+        background-color: rgb(121, 146, 244);
+        border-radius: 4px;
+    }
+
+    .burger.is-active {
+        background-image: url('./img/close.png')   
+    }
+    
+    
+    .menu {
+        /* vh画面の高さ、vw幅一杯 */
+        width: 100vw;
+        height: 100vh;
+        color: rgb(250, 244, 244);
+        background-color:rgb(72, 88, 210);
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* 特定の位置に固定 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: none;  
+    }
+    .menu.is-active {
+        display: flex;
+    }
+    .menus{
+        display: block;
+        font-size:20px;
+        font-weight: 900;
+        border-bottom: 1px solid #f4f6f8;
+    }
+    .click-head a {
+        color: #f5f8f9;
+        padding: 20px;
+    }
+
+    # {
+        width: 100%;
+    }
+
+    /*-============
+    コンタクトページ(html別)
+    ============ */
+    #contact {
+        width:100%;
+    }
+
+    @media(max-width:600px){
+        h2 {
+            font-size:20px ;
+        }
+        .main-text {
+            font-size:30px;
+            padding: 19%;
+        }
+        .infos h3 {
+            font-size: 15px;
+        }
+
+        .container{
+            height: auto;
+        }
+        /*====================
+        代表挨拶 
+        =====================*/
+        .greeting-text {  
+            font-size: 13px;      
+         }
+        
+        /* --------------
+                ニュース
+        -----------------*/
+        .news-container{
+            font-size: 10px; 
+
+        }
+        /*==============
+             採用情報 
+        ================*/
+        .adoptions {
+            font-size: 19px;
+        }
+        .btn {
+            width: 323px;
+            margin: 0 auto;
+    }
+     /*-============
+        フッター
+    ============ */
+
+   
+     .foot-left {
+         font-size: 5px;
+         margin-left: 15px;
+     }
+}
+}
